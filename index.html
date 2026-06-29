@@ -56,6 +56,7 @@
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#resume" class="nav-link">Resume</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
 
@@ -112,7 +113,9 @@
 
                     <!-- CTA Buttons -->
                     <div class="hero-actions">
-
+                        <a href="resume.pdf" target="_blank" class="btn btn-primary" id="downloadResumeBtn">
+                            <i class="fas fa-download"></i> View Resume
+                        </a>
                         <a href="#contact" class="btn btn-secondary">
                             <i class="far fa-paper-plane"></i> Contact Me
                         </a>
@@ -583,6 +586,20 @@
             </div>
         </section>
 
+        <!-- Resume Section -->
+        <section id="resume" class="resume-section section-padding" style="background-color: var(--bg-alt);">
+            <div class="section-container">
+                <div class="section-header reveal-slide-up">
+                    <span class="section-tag">My Profile</span>
+                    <h2 class="section-title">Resume</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="resume-container reveal-fade-in" style="width: 100%; height: 80vh; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-md); margin-top: 2rem;">
+                    <embed src="resume.pdf" type="application/pdf" width="100%" height="100%" />
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="contact-section section-padding">
             <div class="section-container">
@@ -626,6 +643,17 @@
                             </div>
                         </div>
 
+                        <!-- Card displaying quick resume action -->
+                        <div class="contact-resume-card">
+                            <i class="fas fa-file-pdf"></i>
+                            <div>
+                                <h4>Need my CV/Resume?</h4>
+                                <p>Download Nithin's resume for offline reading and ATS evaluation.</p>
+                                <a href="resume.pdf" target="_blank" class="resume-download-link" id="contactDownloadResume">
+                                    View PDF <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
 
                     </div>
 

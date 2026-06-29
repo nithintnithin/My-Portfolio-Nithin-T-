@@ -406,20 +406,7 @@ function initIntersectionObservers() {
    Print Event Handler for CV / Resume Download
    ========================================================================== */
 function initResumePrint() {
-    const downloadResumeBtn = document.getElementById('downloadResumeBtn');
-    const contactDownloadResume = document.getElementById('contactDownloadResume');
-    
-    const triggerPrint = (e) => {
-        e.preventDefault();
-        window.print();
-    };
-    
-    if (downloadResumeBtn) {
-        downloadResumeBtn.addEventListener('click', triggerPrint);
-    }
-    if (contactDownloadResume) {
-        contactDownloadResume.addEventListener('click', triggerPrint);
-    }
+    // Intentionally left blank so the native anchor links work to download/view the resume.pdf file.
 }
 
 /* ==========================================================================

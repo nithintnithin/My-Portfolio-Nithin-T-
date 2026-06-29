@@ -29,7 +29,7 @@ Designed with modern UI/UX aesthetics featuring a customized dark theme, interac
     *   **Validated Contact Form:** Fully responsive, client-side checked text inputs with custom inline errors, submission loading spinner, and success state indicators.
     *   **Scroll Progress Indicator:** A custom top-pinned bar indicating read progress down the page.
 
-**Live Server:** [https://my-portfolio-nithin-t.vercel.app/](https://my-portfolio-nithin-t.vercel.app/)
+**Live Server:** (https://my-portfolio-nithin-t.vercel.app/)
 ---
 
 ## 🛠️ Tech Stack & Libraries
