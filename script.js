@@ -478,8 +478,21 @@ function initContactForm() {
         submitBtn.disabled = true;
         formAlert.style.display = 'none';
         
-        // Simulate premium server communication
-        setTimeout(() => {
+        // Send form data to email using FormSubmit API
+        fetch('https://formsubmit.co/ajax/nithinvirat25@gmail.com', {
+            method: 'POST',
+            headers: { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                name: nameInput.value,
+                email: emailInput.value,
+                message: messageInput.value
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
             submitBtn.classList.remove('loading');
             submitBtn.classList.add('success');
             
@@ -493,8 +506,14 @@ function initContactForm() {
                 submitBtn.classList.remove('success');
                 submitBtn.disabled = false;
             }, 3000);
+        })
+        .catch(error => {
+            submitBtn.classList.remove('loading');
+            submitBtn.disabled = false;
             
-        }, 1800);
+            showFormAlert('Oops! There was a problem sending your message. Please try again later.', 'error');
+            console.error('Error sending message:', error);
+        });
     });
     
     function showFormAlert(message, type) {
